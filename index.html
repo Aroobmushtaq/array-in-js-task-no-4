@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Merge two sorted arrays
+        const arr1=[1,3,5,7]
+        const arr2=[2,4,6,8]
+        const sortarr1=arr1.sort()
+        const sortarr2=arr1.sort()
+        const result=[...sortarr1,...sortarr2]
+        console.log(result)
+        //Remove duplicates from an array
+        const array = [1,2,2,3,4,4,5];
+        const uniqueArray = [...new Set(array)];
+        console.log(uniqueArray);
+        //count the frequency of an element  in an array
+        let arr3=[1,2,3,4,2,5,2,4,2,1,3,4,1,3,2,1]
+        function count(arr , element){
+            return arr.filter((ele)=>ele == element)
+        }
+        console.log(count(arr3,1))
+    </script>
+</body>
+
+</html>
